@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+  --color-accent: #134074;
+  --color-primary: #2373d1;
+  --color-bg: #efe5dc;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.first::after {
+  content: "";
+  background-image: radial-gradient(
+    circle at 100% 100%,
+    transparent 60px,
+    #efe5dc 60px
+  );
+  position: absolute;
+  width: 60px;
+  aspect-ratio: 1;
+  rotate: -90deg;
+  bottom: 0;
+  right: -58px;
+}
+
+.second::after {
+  content: "";
+  background-image: radial-gradient(
+    circle at 100% 100%,
+    transparent 100px,
+    #efe5dc 100px
+  );
+  position: absolute;
+  width: 100px;
+  aspect-ratio: 1;
+  rotate: -90deg;
+  top: -100px;
+  left: 0px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
