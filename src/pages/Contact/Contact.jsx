@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <main className="font-montserrat">
       <div className="px-5 lg:px-20 py-10 bg-bg">
-        <div className="lg:w-[708px] mx-auto my-10">
+        <div id="form" className="lg:w-[708px] mx-auto my-10">
           <p className="text-center lg:text-[48px] text-4xl font-bold text-[#222222]">
             Let's make impact together!
           </p>

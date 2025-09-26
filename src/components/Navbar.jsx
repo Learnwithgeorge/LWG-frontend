@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { NavLink } from "react-router-dom";
-import logo from "../assets/logo1.png";
+import logo from "../assets/logo.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { IoMenu } from "react-icons/io5";
 import { useState } from "react";
@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
+  const [btn, setBtn] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
@@ -21,7 +22,7 @@ export default function Navbar() {
       } bg-bg flex items-center justify-between px-5 lg:px-20 py-5 fixed w-full z-10`}
     >
       <NavLink to="/">
-        <div className="lg:w-[126px] w-[90px] lg:h-[84px] h-[70px]">
+        <div className="lg:w-[183px] w-[120px] h-[32px]">
           <img className="w-full h-full object-contain" src={logo} alt="logo" />
         </div>
       </NavLink>
@@ -192,21 +193,27 @@ export default function Navbar() {
                 Contact Us
               </NavLink>
             </li>
-            <li>
-              <NavLink>
-                <motion.button
-                  className="cursor-pointer bg-[#bbb] text-white w-[162px] py-3 rounded-full text-lg font-extrabold flex items-center justify-center gap-2"
-                  whileHover={{
-                    scale: 1.05,
-                    boxShadow: "0px 8px 20px rgba(0,0,0,0.2)",
-                  }}
-                  whileTap={{ scale: 0.95 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                >
-                  <p>Donate</p>
-                  <FaArrowRightLong />
-                </motion.button>
-              </NavLink>
+            <li className="relative">
+              {/* <NavLink> */}
+              <motion.button
+                onClick={() => setBtn(!btn)}
+                className="cursor-pointer bg-[#bbb] text-white w-[162px] py-3 rounded-full text-lg font-extrabold flex items-center justify-center gap-2"
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: "0px 8px 20px rgba(0,0,0,0.2)",
+                }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <p>Donate</p>
+                <FaArrowRightLong />
+              </motion.button>
+              {btn && (
+                <div className="absolute left-1/2 -translate-x-1/2 top-14 bg-black text-white text-sm px-3 py-1 rounded-lg transition-opacity duration-300 whitespace-nowrap">
+                  <span className="animate-pulse text-sm">Coming soon...</span>
+                </div>
+              )}
+              {/* </NavLink> */}
             </li>
           </ul>
         </div>

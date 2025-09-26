@@ -4,9 +4,11 @@ import { servicesRendered } from "../../utils/constants";
 import WhiteBtn from "../../components/WhiteBtn";
 import { IoIosArrowBack } from "react-icons/io";
 import GoBack from "../../components/GoBack";
+import { useState } from "react";
 
 export default function ServicesDetails() {
   const params = useParams();
+  const [btn, setBtn] = useState(false);
 
   const currentService = servicesRendered?.filter(
     (program) => program.name === params?.id
@@ -73,11 +75,24 @@ export default function ServicesDetails() {
                 ))}
               </ol>
               <div className="grid place-items-center mt-10">
-                {name.includes("Certification") ? (
-                  <WhiteBtn text="Book a Call" />
-                ) : (
-                  <WhiteBtn text="Book an Appointment" />
-                )}
+                <div className="relative group">
+                  {name.includes("Certification") ? (
+                    <WhiteBtn onClick={() => setBtn(!btn)} text="Book a Call" />
+                  ) : (
+                    <WhiteBtn
+                      onClick={() => setBtn(!btn)}
+                      text="Book an Appointment"
+                    />
+                  )}
+
+                  {btn && (
+                    <span className="absolute left-1/2 -translate-x-1/2 top-14 bg-black text-white text-sm px-3 py-1 rounded-lg transition-opacity duration-300 whitespace-nowrap">
+                      <span className="animate-pulse text-sm">
+                        Coming soon...
+                      </span>
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
           </div>

@@ -6,6 +6,7 @@ import { IoLogoWhatsapp, IoMdMailUnread } from "react-icons/io";
 import WhiteBtn from "./WhiteBtn";
 import { NavLink } from "react-router-dom";
 import SocialLinks from "./SocialLinks";
+import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
   const date = new Date();
@@ -21,7 +22,7 @@ export default function Footer() {
             analytics, data science and tech skills for Africans, Africans in
             the diaspora and underrepresented communities worldwide..
           </p>
-          <NavLink to="/contact">
+          <HashLink smooth to="/contact#form">
             <motion.button
               className="cursor-pointer bg-accent text-white w-[162px] py-3 rounded-full text-lg font-extrabold flex items-center justify-center gap-2"
               whileHover={{
@@ -34,7 +35,7 @@ export default function Footer() {
               <p>Connect</p>
               <FaArrowRightLong />
             </motion.button>
-          </NavLink>
+          </HashLink>
 
           <div className="mt-10 flex flex-col lg:gap-5 gap-2">
             <div className="flex items-center text-accent gap-5">

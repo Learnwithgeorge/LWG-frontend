@@ -22,7 +22,7 @@ export default function Details() {
             <p className="uppercase text-[#10111A] lg:text-[30px] text-2xl font-semibold">
               PROGRAMS
             </p>
-            <p className="lg:text-lg capitalize">Data Analysis with Excel</p>
+            <p className="lg:text-lg capitalize">{currentProgram[0]?.name}</p>
           </div>
           <div className="lg:absolute lg:w-[420px] w-full lg:translate-x-1/2 lg:right-1/2">
             <ProgramCard details {...currentProgram[0]} />
