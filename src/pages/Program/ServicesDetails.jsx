@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import DetailBlocks from "../../components/DetailBlocks";
 import { servicesRendered } from "../../utils/constants";
 import WhiteBtn from "../../components/WhiteBtn";
-import { IoIosArrowBack } from "react-icons/io";
 import GoBack from "../../components/GoBack";
 import { useState } from "react";
 
@@ -17,11 +16,11 @@ export default function ServicesDetails() {
   const { name, description, notes, steps } = currentService[0];
 
   return (
-    <main className="font-monserrat bg-bg">
+    <main className="font-monserrat bg-bg pt-5 lg:pt-0">
       <GoBack />
       <div className="px-5 lg:px-20 py-20 bg-bg">
         <div className="lg:w-[800px] w-full mx-auto">
-          <p className="text-center lg:text-[64px] text-3xl font-bold text-[#222222] lg:w-[669px] w-full mx-auto mb-2">
+          <p className="text-center lg:text-[64px] text-3xl font-bold text-[#222222] lg:w-[670px] w-full mx-auto mb-2">
             {name}
           </p>
           <p className="text-center">{description}</p>
