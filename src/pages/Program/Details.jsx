@@ -14,7 +14,7 @@ export default function Details() {
   );
 
   return (
-    <main className="font-monserrat bg-bg">
+    <main className="font-monserrat bg-bg pt-5 lg:pt-0">
       <GoBack />
       <div className="px-5 lg:px-20 pt-20 bg-bg">
         <div className="flex lg:flex-row flex-col lg:gap-0 gap-10 mb-20 lg:mb-0 lg:min-h-[670px]">
