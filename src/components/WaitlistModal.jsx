@@ -2,8 +2,11 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import WhiteBtn from "./WhiteBtn";
+import { useForm } from "@formspree/react";
+import { RiMailCheckFill } from "react-icons/ri";
 
-export default function WaitlistModal() {
+export default function WaitlistModal({ name }) {
+  const [state, handleSubmit] = useForm("xyznkakw");
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -40,41 +43,78 @@ export default function WaitlistModal() {
                 ✕
               </button>
 
-              <h2 className="text-xl font-bold text-center mb-2">
-                Join the Waiting List
-              </h2>
-              <p className="text-black text-center mb-6">
-                Be the first to access the new program when it launches.
-              </p>
+              {state.succeeded ? (
+                <div className="text-center grid gap-3 place-items-center py-6">
+                  <div className="text-accent">
+                    <RiMailCheckFill size={60} />
+                  </div>
+                  <p className="text-lg font-semibold text-gray-800">
+                    Thank you for joining the waitlist!
+                  </p>
+                  <p className="text-sm text-gray-600">
+                    We’ll notify you when{" "}
+                    <span className="font-bold">{name}</span> is available.
+                  </p>
+                </div>
+              ) : (
+                <>
+                  <h2 className="text-xl font-bold text-center mb-2">
+                    Join the Waiting List
+                  </h2>
+                  <p className="text-black text-center mb-6">
+                    Be the first to access the new program when it launches.
+                  </p>
 
-              <div className="flex flex-col gap-4">
-                <div className="w-full">
-                  <label className="block text-accent font-bold" htmlFor="name">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="John Doe"
-                    className="border border-accent rounded-lg px-4 py-2 w-full outline-none focus:ring-2 focus:ring-accent"
-                  />
-                </div>
+                  <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+                    <input
+                      type="hidden"
+                      name="subject"
+                      value={`Waitlist signup for ${name}`}
+                    />
+                    <input
+                      type="hidden"
+                      name="message"
+                      value={`Please notify me when ${name} is available.`}
+                    />
 
-                <div className="w-full">
-                  <label className="block text-accent font-bold" htmlFor="name">
-                    Email Address
-                  </label>
-                  <input
-                    type="text"
-                    name="email"
-                    placeholder="johndoe@example.com"
-                    className="border border-accent rounded-lg px-4 py-2 w-full outline-none focus:ring-2 focus:ring-accent"
-                  />
-                </div>
-                <div className="mx-auto">
-                  <WhiteBtn text="Notify Me" />
-                </div>
-              </div>
+                    <div className="w-full">
+                      <label
+                        className="block text-accent font-bold"
+                        htmlFor="name"
+                      >
+                        Name
+                      </label>
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="John Doe"
+                        required
+                        className="border border-accent rounded-lg px-4 py-2 w-full outline-none focus:ring-2 focus:ring-accent"
+                      />
+                    </div>
+
+                    <div className="w-full">
+                      <label
+                        className="block text-accent font-bold"
+                        htmlFor="email"
+                      >
+                        Email Address
+                      </label>
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="johndoe@example.com"
+                        required
+                        className="border border-accent rounded-lg px-4 py-2 w-full outline-none focus:ring-2 focus:ring-accent"
+                      />
+                    </div>
+
+                    <div className="mx-auto">
+                      <WhiteBtn loading={state.submitting} text="Notify Me" />
+                    </div>
+                  </form>
+                </>
+              )}
             </motion.div>
           </motion.div>
         )}

@@ -1,5 +1,5 @@
 import contact from "../../assets/contact.png";
-import WhiteBtn from "../../components/WhiteBtn";
+import Message from "./Message";
 
 export default function Contact() {
   return (
@@ -20,55 +20,7 @@ export default function Contact() {
 
         <div className="flex lg:flex-row flex-col-reverse items-center justify-between gap-10">
           <div className="w-full">
-            <div className="bg-white grid gap-5 rounded-2xl px-5 py-10 lg:w-fit w-full">
-              <div className="w-full">
-                <label
-                  className="block mb-2 text-accent font-bold"
-                  htmlFor="name"
-                >
-                  Name
-                </label>
-                <input
-                  className="border-[2px] border-[#123D6E] lg:w-[436px] w-full p-3 rounded-2xl placeholder:italic"
-                  type="text"
-                  placeholder="John Doe"
-                  name="name"
-                  id="name"
-                />
-              </div>
-              <div>
-                <label
-                  className="block mb-2 text-accent font-bold"
-                  htmlFor="email"
-                >
-                  Email Address
-                </label>
-                <input
-                  className="border-[2px] border-[#123D6E] lg:w-[436px] w-full p-3 rounded-2xl placeholder:italic"
-                  type="text"
-                  placeholder="Johndoe@example.com"
-                  name="email"
-                  id="email"
-                />
-              </div>
-
-              <div>
-                <label
-                  className="block mb-2 text-accent font-bold"
-                  htmlFor="message"
-                >
-                  Your Message
-                </label>
-                <textarea
-                  className="border-[2px] border-[#123D6E] lg:w-[436px] w-full p-3 rounded-2xl placeholder:italic"
-                  name="message"
-                  id="message"
-                  rows={5}
-                ></textarea>
-              </div>
-
-              <WhiteBtn text="Submit" />
-            </div>
+            <Message />
           </div>
           <div>
             <div className="lg:w-[650px]">
