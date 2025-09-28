@@ -7,6 +7,7 @@ import WhiteBtn from "./WhiteBtn";
 import { NavLink } from "react-router-dom";
 import SocialLinks from "./SocialLinks";
 import { HashLink } from "react-router-hash-link";
+import NewsLetter from "./NewsLetter";
 
 export default function Footer() {
   const date = new Date();
@@ -55,32 +56,15 @@ export default function Footer() {
               <div className="bg-white w-[50px] h-[50px] rounded-full grid place-items-center">
                 <IoMdMailUnread size={25} />
               </div>
-              <a
-                href="mailto:learnwithgeorgejnr@gmail.com"
-                className="font-bold"
-              >
-                learnwithgeorgejnr@gmail.com
+              <a href="mailto:admin@learnwithgeorge.org" className="font-bold">
+                admin@learnwithgeorge.org
               </a>
             </div>
           </div>
         </div>
         <div className="h-[458px] w-1 bg-black hidden lg:block"></div>
         <div className="grid place-items-center">
-          <div className="lg:w-[419px] lg:px-12">
-            <p className="lg:text-[36px] text-3xl font-semibold">
-              Sign up for our newsletter
-            </p>
-            <p className="lg:text-xl">
-              Be the first to know about releases and industry news and
-              insights.
-            </p>
-            <input
-              className="bg-white lg:w-[360px] w-full p-3 rounded-md shadow-lg mt-7  mb-5"
-              type="text"
-              placeholder="Enter your email"
-            />
-            <WhiteBtn text="Subscribe" />
-          </div>
+          <NewsLetter />
         </div>
       </section>
       <div className="bg-white">

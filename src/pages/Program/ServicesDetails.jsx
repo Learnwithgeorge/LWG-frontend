@@ -61,7 +61,7 @@ export default function ServicesDetails() {
                                     className="flex items-center gap-2"
                                   >
                                     <div className="w-2 h-2 bg-[#333333]"></div>
-                                    <p>{list}</p>
+                                    <p className="flex-1">{list}</p>
                                   </li>
                                 ))}
                               </ul>

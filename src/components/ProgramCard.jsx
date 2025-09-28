@@ -32,7 +32,7 @@ export default function ProgramCard({ details, img, name, brief, status }) {
             text="Learn more"
           />
         ) : (
-          !details && <WaitlistModal />
+          !details && <WaitlistModal name={name} />
         )}
       </div>
     </div>
