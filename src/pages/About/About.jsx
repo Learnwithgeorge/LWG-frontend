@@ -12,7 +12,7 @@ export default function About() {
           <div className="grid gap-10">
             <SectionTitle subtitle="who we are" title="about us" />
             <p className="lg:w-[90%]  lg:text-base text-sm font-medium">
-              Learn with George Foundation is more than a nonprofit we empower
+              Learn with George Foundation is more than a nonprofit. We empower
               Africans and Africans in the diaspora with the skills to thrive in
               a technology-driven world. We believe talent is everywhere, but
               opportunity is not. Our mission is to bridge that gap through
