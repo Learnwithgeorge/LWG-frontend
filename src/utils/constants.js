@@ -66,7 +66,7 @@ export const programs = [
       {
         name: "Introduction & Data Cleaning",
         lessons: [
-          "Understanding datasets",
+          "Understanding datasets and project brief",
           "Basic Excel functions (SUM, AVERAGE, COUNT, etc.)",
           "Removing duplicates, handling missing data and formatting",
         ],
