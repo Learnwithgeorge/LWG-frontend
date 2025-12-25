@@ -3,17 +3,16 @@ import DetailBlocks from "../../components/DetailBlocks";
 import { servicesRendered } from "../../utils/constants";
 import WhiteBtn from "../../components/WhiteBtn";
 import GoBack from "../../components/GoBack";
-import { useState } from "react";
 
 export default function ServicesDetails() {
   const params = useParams();
-  const [btn, setBtn] = useState(false);
 
   const currentService = servicesRendered?.filter(
     (program) => program.name === params?.id
   );
 
-  const { name, description, notes, steps } = currentService[0];
+  const { name, description, notes, steps, link } = currentService[0];
+  console.log(currentService[0]);
 
   return (
     <main className="font-monserrat bg-bg pt-5 lg:pt-0">
@@ -76,20 +75,13 @@ export default function ServicesDetails() {
               <div className="grid place-items-center mt-10">
                 <div className="relative group">
                   {name.includes("Certification") ? (
-                    <WhiteBtn onClick={() => setBtn(!btn)} text="Book a Call" />
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                      <WhiteBtn text="Book a Call" />
+                    </a>
                   ) : (
-                    <WhiteBtn
-                      onClick={() => setBtn(!btn)}
-                      text="Book an Appointment"
-                    />
-                  )}
-
-                  {btn && (
-                    <span className="absolute left-1/2 -translate-x-1/2 top-14 bg-black text-white text-sm px-3 py-1 rounded-lg transition-opacity duration-300 whitespace-nowrap">
-                      <span className="animate-pulse text-sm">
-                        Coming soon...
-                      </span>
-                    </span>
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                      <WhiteBtn text="Book an Appointment" />
+                    </a>
                   )}
                 </div>
               </div>

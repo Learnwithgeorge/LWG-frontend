@@ -265,81 +265,81 @@ export const programs = [
     link: "https://forms.gle/pTaABmKUqkPVcdMj7",
   },
 
-  {
-    id: 3,
-    status: "Active",
-    img: project,
-    name: "Project Portfolio Program",
-    brief:
-      "Apply your skills to real-world projects and build a portfolio that showcases your  abilities to employers or clients.",
-    overview:
-      "The Project & Portfolio Program helps learners apply their Excel, SQL and Power BI  skills to real-world datasets. Participants work in groups to research, analyse and  present projects, building portfolio-ready work for GitHub and personal websites. By  the end, learners will have three professional projects demonstrating their data  analysis, visualization and storytelling abilities.",
-    audience: [
-      "Learners who have completed at least one core program (Excel, SQL or Power BI)",
-      "Anyone who wants to apply skills in practical projects",
-      "Learners seeking structured guidance, mentorship and portfolio development",
-    ],
-    offer: [
-      "Work on real datasets and create projects that showcase practical skills",
-      "Learn to research, plan and execute projects collaboratively",
-      "Gain experience documenting projects on GitHub and personal websites",
-      "Receive mentorship, weekly check-ins and structured timelines",
-      "End with portfolio-ready projects for career advancement",
-    ],
-    requirements: [
-      "Completion of at least one core program (Excel, SQL or Power BI)",
-      "Reliable internet connection",
-      "Willingness to collaborate in groups and commit to weekly milestones",
-      "Basic familiarity with GitHub or willingness to learn",
-    ],
-    content: [
-      {
-        name: "Group Formation & Excel Project",
-        lessons: [
-          "Form project groups and select datasets",
-          "Define project requirements and business case",
-          "Work on Excel project:  Clean and structure data  Apply formulas, calculated columns and KPIs   Produce charts for analysis",
-          "Cleaning and transforming data with Power Query",
-          "Project Task: Load and clean a sample dataset",
-        ],
-      },
-      {
-        name: "SQL Project",
-        lessons: [
-          "Import dataset into a database (MySQL Workbench)",
-          "Write queries, joins and aggregations",
-          "Analyse data and generate KPI reports",
-          "Prepare outputs for dashboards",
-        ],
-      },
-      {
-        name: "Power BI Project & GitHub Setup",
-        lessons: [
-          "Import cleaned datasets into Power BI",
-          "Build interactive dashboards and KPIs",
-          "GitHub Mini Session:  Create repositories and organize projects. Add README files describing datasets, methods and insights",
-          "Begin documenting ongoing projects for GitHub and portfolio website",
-        ],
-      },
-      {
-        name: "Portfolio Documentation & Refinement",
-        lessons: [
-          "Refine all three projects (Excel, SQL, Power BI)",
-          "Portfolio Website Session:  Upload projects to portfolio website (Notion, GitHub Pages or similar)  Prepare clear project descriptions and visuals",
-          "Mentors provide feedback to polish projects",
-        ],
-      },
-      {
-        name: "Final Project Presentation & Showcase",
-        lessons: [
-          "Groups present projects individually",
-          "Showcase projects publicly with GitHub links and portfolio website",
-          "Portfolio Outcome: 3 professional, portfolio-ready projects demonstrating  analytical, visualization and storytelling skills",
-        ],
-      },
-    ],
-    link: "https://forms.gle/HekrNjjtEBTmfjjG8",
-  },
+  // {
+  //   id: 3,
+  //   status: "Active",
+  //   img: project,
+  //   name: "Project Portfolio Program",
+  //   brief:
+  //     "Apply your skills to real-world projects and build a portfolio that showcases your  abilities to employers or clients.",
+  //   overview:
+  //     "The Project & Portfolio Program helps learners apply their Excel, SQL and Power BI  skills to real-world datasets. Participants work in groups to research, analyse and  present projects, building portfolio-ready work for GitHub and personal websites. By  the end, learners will have three professional projects demonstrating their data  analysis, visualization and storytelling abilities.",
+  //   audience: [
+  //     "Learners who have completed at least one core program (Excel, SQL or Power BI)",
+  //     "Anyone who wants to apply skills in practical projects",
+  //     "Learners seeking structured guidance, mentorship and portfolio development",
+  //   ],
+  //   offer: [
+  //     "Work on real datasets and create projects that showcase practical skills",
+  //     "Learn to research, plan and execute projects collaboratively",
+  //     "Gain experience documenting projects on GitHub and personal websites",
+  //     "Receive mentorship, weekly check-ins and structured timelines",
+  //     "End with portfolio-ready projects for career advancement",
+  //   ],
+  //   requirements: [
+  //     "Completion of at least one core program (Excel, SQL or Power BI)",
+  //     "Reliable internet connection",
+  //     "Willingness to collaborate in groups and commit to weekly milestones",
+  //     "Basic familiarity with GitHub or willingness to learn",
+  //   ],
+  //   content: [
+  //     {
+  //       name: "Group Formation & Excel Project",
+  //       lessons: [
+  //         "Form project groups and select datasets",
+  //         "Define project requirements and business case",
+  //         "Work on Excel project:  Clean and structure data  Apply formulas, calculated columns and KPIs   Produce charts for analysis",
+  //         "Cleaning and transforming data with Power Query",
+  //         "Project Task: Load and clean a sample dataset",
+  //       ],
+  //     },
+  //     {
+  //       name: "SQL Project",
+  //       lessons: [
+  //         "Import dataset into a database (MySQL Workbench)",
+  //         "Write queries, joins and aggregations",
+  //         "Analyse data and generate KPI reports",
+  //         "Prepare outputs for dashboards",
+  //       ],
+  //     },
+  //     {
+  //       name: "Power BI Project & GitHub Setup",
+  //       lessons: [
+  //         "Import cleaned datasets into Power BI",
+  //         "Build interactive dashboards and KPIs",
+  //         "GitHub Mini Session:  Create repositories and organize projects. Add README files describing datasets, methods and insights",
+  //         "Begin documenting ongoing projects for GitHub and portfolio website",
+  //       ],
+  //     },
+  //     {
+  //       name: "Portfolio Documentation & Refinement",
+  //       lessons: [
+  //         "Refine all three projects (Excel, SQL, Power BI)",
+  //         "Portfolio Website Session:  Upload projects to portfolio website (Notion, GitHub Pages or similar)  Prepare clear project descriptions and visuals",
+  //         "Mentors provide feedback to polish projects",
+  //       ],
+  //     },
+  //     {
+  //       name: "Final Project Presentation & Showcase",
+  //       lessons: [
+  //         "Groups present projects individually",
+  //         "Showcase projects publicly with GitHub links and portfolio website",
+  //         "Portfolio Outcome: 3 professional, portfolio-ready projects demonstrating  analytical, visualization and storytelling skills",
+  //       ],
+  //     },
+  //   ],
+  //   link: "https://forms.gle/HekrNjjtEBTmfjjG8",
+  // },
 
   {
     id: 4,
@@ -376,6 +376,7 @@ export const servicesRendered = [
   {
     id: 0,
     img: certificate,
+    link: "https://selar.com/l49671h411",
     name: "Certification for completed courses",
     brief: "Learners receive  certificates after finishing courses.",
     description:
@@ -449,6 +450,7 @@ export const servicesRendered = [
   {
     id: 1,
     img: clarity,
+    link: "https://selar.com/3bj5pa1776",
     name: "Clarity/Guidance Calls",
     brief:
       "Personal sessions with mentors to answer questions and provide tailored advice.",
@@ -518,6 +520,7 @@ export const servicesRendered = [
   {
     id: 2,
     img: review,
+    link: "https://selar.com/569m518111",
     name: "CV/Portfolio Review",
     brief:
       "Expert feedback to polish resumes and portfolios for better career opportunities.",
@@ -596,6 +599,7 @@ export const servicesRendered = [
   {
     id: 3,
     img: interview,
+    link: "https://selar.com/71645954ku",
     name: "Interview Simulations",
     brief:
       "Practice real-world interview scenarios to build confidence and improve performance.",
@@ -670,6 +674,76 @@ export const servicesRendered = [
       "Sending your CV/portfolio and details of the interview role/company is required  for a fully personalized session.",
       "Rescheduling is possible with 24 hours notice.",
       "You can book multiple sessions to practice different scenarios or focus areas.",
+    ],
+  },
+  {
+    id: 4,
+    img: project,
+    link: "https://selar.com/65m3134iw6",
+    name: "Project Portfolio Program",
+    brief:
+      "Apply your skills to real-world projects and build a portfolio that showcases your  abilities to employers or clients.",
+    description:
+      "The Project & Portfolio Program helps learners apply their Excel, SQL and Power BI  skills to real-world datasets. Participants work in groups to research, analyse and  present projects, building portfolio-ready work for GitHub and personal websites. By  the end, learners will have three professional projects demonstrating their data  analysis, visualization and storytelling abilities.",
+    steps: [
+      {
+        title: "Make Your Payment",
+        step: [
+          {
+            list: ["Payments are made securely through Paystack."],
+            sublist: [],
+          },
+          {
+            list: ["After payment, kindly take a screenshot of your receipt."],
+            sublist: [],
+          },
+        ],
+      },
+      {
+        title: "Send Us Your Booking Email",
+        step: [
+          {
+            list: [
+              "Email your receipt screenshot to admin@learnwithgeorge.org with the  subject line: “Clarity Call - Your Full Name”",
+            ],
+            sublist: [],
+          },
+          {
+            list: ["In your email, include:"],
+            sublist: [
+              "Full Name",
+              "Preferred Date & Time for the call (please allow at least 48 hrs  notice)",
+              "Duration you are booking (30 mins)",
+              "Key Questions / Topics you would like to discuss",
+              "WhatsApp number (for quick communication, if needed)",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Receive Your Confirmation Email",
+        step: [
+          {
+            list: [
+              "After we verify your payment and review your session details, you will  receive a confirmation email within 48 hours.",
+            ],
+            sublist: [],
+          },
+          {
+            list: ["This email will include:"],
+            sublist: [
+              "Confirmed date and time of your call",
+              "A Google Meet / Zoom link for the session",
+              "Any additional instructions",
+            ],
+          },
+        ],
+      },
+    ],
+    notes: [
+      "Answer your specific questions",
+      "Provide tailored advice for your learning journey",
+      "Offer career guidance and practical next steps",
     ],
   },
 ];
