@@ -191,9 +191,11 @@ export default function Navbar() {
             </li>
             <li className="relative">
               {/* <NavLink> */}
-              <motion.button
-                onClick={() => setBtn(!btn)}
-                className="cursor-pointer bg-[#bbb] text-white w-[162px] py-3 rounded-full text-lg font-extrabold flex items-center justify-center gap-2"
+              <motion.a
+                href="https://selar.com/s1v35t617m"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cursor-pointer bg-[#134074] text-white w-[162px] py-3 rounded-full text-lg font-extrabold flex items-center justify-center gap-2"
                 whileHover={{
                   scale: 1.05,
                   boxShadow: "0px 8px 20px rgba(0,0,0,0.2)",
@@ -203,13 +205,7 @@ export default function Navbar() {
               >
                 <p>Donate</p>
                 <FaArrowRightLong />
-              </motion.button>
-              {btn && (
-                <div className="absolute left-1/2 -translate-x-1/2 top-14 bg-black text-white text-sm px-3 py-1 rounded-lg transition-opacity duration-300 whitespace-nowrap">
-                  <span className="animate-pulse text-sm">Coming soon...</span>
-                </div>
-              )}
-              {/* </NavLink> */}
+              </motion.a>
             </li>
           </ul>
         </div>

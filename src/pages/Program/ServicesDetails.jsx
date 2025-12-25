@@ -76,7 +76,7 @@ export default function ServicesDetails() {
                 <div className="relative group">
                   {name.includes("Certification") ? (
                     <a href={link} target="_blank" rel="noopener noreferrer">
-                      <WhiteBtn text="Book a Call" />
+                      <WhiteBtn text="Order your Certificate" />
                     </a>
                   ) : (
                     <a href={link} target="_blank" rel="noopener noreferrer">
