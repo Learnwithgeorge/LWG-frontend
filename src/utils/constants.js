@@ -413,7 +413,7 @@ export const servicesRendered = [
         step: [
           {
             list: [
-              "Email your screenshot to admin@learnwithgeorge.org with the subject  line: “Certificate Payment - Your Full Name - Cohort Name”",
+              "Email your screenshot to learnwithgeorgejnr@gmail.com with the subject  line: “Certificate Payment - Your Full Name - Cohort Name”",
             ],
             sublist: [],
           },
@@ -444,7 +444,7 @@ export const servicesRendered = [
     notes: [
       "Ensure that the name you provide matches exactly how you want it displayed on  your certificate.",
       "Certificates are issued electronically only (PDF format).",
-      "If you do not receive your certificate within 48 hours after confirmation, kindly  follow up by emailing admin@learnwithgeorge.org.",
+      "If you do not receive your certificate within 48 hours after confirmation, kindly  follow up by emailing learnwithgeorgejnr@gmail.com.",
     ],
   },
   {
@@ -546,7 +546,7 @@ export const servicesRendered = [
         step: [
           {
             list: [
-              "Email your receipt screenshot to admin@learnwithgeorge.org with the  subject line: “CV/Portfolio Review  - Your Full Name”",
+              "Email your receipt screenshot to learnwithgeorgejnr@gmail.com with the  subject line: “CV/Portfolio Review  - Your Full Name”",
             ],
             sublist: [],
           },
@@ -624,7 +624,7 @@ export const servicesRendered = [
         step: [
           {
             list: [
-              "Email your receipt screenshot to admin@learnwithgeorge.org with the  subject line: “Interview Simulation - Your Full Name”",
+              "Email your receipt screenshot to learnwithgeorgejnr@gmail.com with the  subject line: “Interview Simulation - Your Full Name”",
             ],
             sublist: [],
           },
