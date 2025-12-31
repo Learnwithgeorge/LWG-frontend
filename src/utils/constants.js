@@ -475,7 +475,7 @@ export const servicesRendered = [
         step: [
           {
             list: [
-              "Email your receipt screenshot to admin@learnwithgeorge.org with the  subject line: “Clarity Call - Your Full Name”",
+              "Email your receipt screenshot to learnwithgeorgejnr@gmail.com  with the  subject line: “Clarity Call - Your Full Name”",
             ],
             sublist: [],
           },
@@ -704,7 +704,7 @@ export const servicesRendered = [
         step: [
           {
             list: [
-              "Email your receipt screenshot to admin@learnwithgeorge.org with the  subject line: “Clarity Call - Your Full Name”",
+              "Email your receipt screenshot to learnwithgeorgejnr@gmail.com with the  subject line: “Clarity Call - Your Full Name”",
             ],
             sublist: [],
           },
