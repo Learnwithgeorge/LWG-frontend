@@ -56,8 +56,8 @@ export default function Footer() {
               <div className="bg-white w-[50px] h-[50px] rounded-full grid place-items-center">
                 <IoMdMailUnread size={25} />
               </div>
-              <a href="mailto:admin@learnwithgeorge.org" className="font-bold">
-                admin@learnwithgeorge.org
+              <a href="mailto:learnwithgeorgejnr@gmail.com" className="font-bold">
+                learnwithgeorgejnr@gmail.com 
               </a>
             </div>
           </div>
