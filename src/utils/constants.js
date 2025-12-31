@@ -679,7 +679,7 @@ export const servicesRendered = [
   {
     id: 4,
     img: project,
-    link: "https://selar.com/65m3134iw6",
+    link: "https://forms.gle/wGbArnpr4rvnFPN4A",
     name: "Project Portfolio Program",
     brief:
       "Apply your skills to real-world projects and build a portfolio that showcases your  abilities to employers or clients.",
