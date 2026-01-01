@@ -690,7 +690,7 @@ export const servicesRendered = [
         title: "Make Your Payment",
         step: [
           {
-            list: ["Payments are made securely through Paystack."],
+            list: ["Payments are made securely through Selar or Paystack."],
             sublist: [],
           },
           {
@@ -704,7 +704,7 @@ export const servicesRendered = [
         step: [
           {
             list: [
-              "Email your receipt screenshot to learnwithgeorgejnr@gmail.com with the  subject line: “Clarity Call - Your Full Name”",
+              "Email your receipt screenshot to learnwithgeorgejnr@gmail.com with the  subject line: “Project & Portfolio Program - Your Full Name”",
             ],
             sublist: [],
           },
@@ -712,9 +712,7 @@ export const servicesRendered = [
             list: ["In your email, include:"],
             sublist: [
               "Full Name",
-              "Preferred Date & Time for the call (please allow at least 48 hrs  notice)",
-              "Duration you are booking (30 mins)",
-              "Key Questions / Topics you would like to discuss",
+              "Screen shot of Payment",
               "WhatsApp number (for quick communication, if needed)",
             ],
           },
@@ -725,18 +723,18 @@ export const servicesRendered = [
         step: [
           {
             list: [
-              "After we verify your payment and review your session details, you will  receive a confirmation email within 48 hours.",
+              "After we verify your payment and review your session details, you will be added to the Portfolio Program Whatsapp Group.",
             ],
             sublist: [],
           },
-          {
-            list: ["This email will include:"],
-            sublist: [
-              "Confirmed date and time of your call",
-              "A Google Meet / Zoom link for the session",
-              "Any additional instructions",
-            ],
-          },
+         //  {
+          //   list: ["This email will include:"],
+         //    sublist: [
+            //   "Confirmed date and time of your call",
+            //   "A Google Meet / Zoom link for the session",
+            //   "Any additional instructions",
+          //   ],
+         // },
         ],
       },
     ],
